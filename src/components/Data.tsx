@@ -2,14 +2,7 @@ import React, { useState } from 'react'
 import Form from './Form'
 import Weather from './Weather'
 import { base_url, api_key } from '../utils/constant'
-
-interface WeatherInfo {
-    city: string;
-    country: string;
-    temp: number;
-    pressure: number;
-    sunset: number;
-}
+import { WeatherInfo } from '../types'
 
 const Data: React.FC = () => {
     const [weatherInfo, setWeatherInfo] = useState<WeatherInfo | {}>({})

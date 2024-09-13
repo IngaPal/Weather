@@ -1,12 +1,5 @@
 import React from 'react'
-
-interface WeatherInfo {
-    city: string;
-    country: string;
-    temp: number;
-    pressure: number;
-    sunset: number;
-}
+import { WeatherInfo } from '../types'
 
 interface WeatherProps {
     weather: WeatherInfo;
